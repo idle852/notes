@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.15)  22 OCT 2024 19:35
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.15)  24 NOV 2024 11:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -716,11 +716,11 @@ File: Claude_Monet-NC.jpg Graphic file (type bmp)
 \openout7 = `notes.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 256.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 260.
 (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
@@ -736,7 +736,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: 3.png Graphic file (type bmp)
 <3.png>
  [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 407--409
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
 
  []
 
@@ -749,10 +749,10 @@ Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 2F39B74665D13B2BD626E48C3CD23007;2157.
  ) 
 Here is how much of TeX's memory you used:
- 25252 strings out of 474773
- 467685 string characters out of 5761288
+ 25251 strings out of 474773
+ 467677 string characters out of 5761288
  1950842 words of memory out of 5000000
- 46753 multiletter control sequences out of 15000+600000
+ 46752 multiletter control sequences out of 15000+600000
  568651 words of font info for 99 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
  84i,33n,97p,590b,1100s stack positions out of 10000i,1000n,20000p,200000b,200000s
