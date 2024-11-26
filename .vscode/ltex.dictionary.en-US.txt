@@ -1,0 +1,14 @@
+pinnings
+Pinnings
+Borel
+mathoverflow
+Casselman-Wallach
+Grothendieck
+Weyl
+Cartan
+complexified
+Langlands
+nilpotent
+Brylinski
+Borho
+Vogan
