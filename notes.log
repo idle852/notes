@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.15)  26 NOV 2024 15:38
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.15)  28 NOV 2024 16:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -921,13 +921,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--419
 Missing character: There is no ^^@ (U+0000) in font [lmroman12-regular]:mapping=tex-text;!
 [8] [9]
 Missing character: There is no ^^S (U+0013) in font [lmroman12-regular]:mapping=tex-text;!
-[10] [11] [12] [13] [14] (./notes.aux)
+[10] [11] [12] [13] [14] [15] (./notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 820E1CF81820557BFD13D9F7CAD2C7E9;2157.
+(rerunfilecheck)             Checksum: 2D8D809BF9E35C4C3F267F1221C2C101;2269.
  ) 
 Here is how much of TeX's memory you used:
  29403 strings out of 474773
@@ -938,4 +938,4 @@ Here is how much of TeX's memory you used:
  1509 hyphenation exceptions out of 8191
  84i,33n,97p,590b,1100s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notes.pdf (14 pages).
+Output written on notes.pdf (15 pages).
