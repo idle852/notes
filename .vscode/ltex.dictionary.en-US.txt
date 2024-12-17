@@ -12,3 +12,4 @@ nilpotent
 Brylinski
 Borho
 Vogan
+Chevalley

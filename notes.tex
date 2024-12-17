@@ -247,6 +247,9 @@ but interesting problems that I encounter
 in daily life.
 
 
+
+For as the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts.---Isaiah 55:9
+
 \newpage
 
 
@@ -684,13 +687,62 @@ Some facts about continuous complex characters of some common abelian topologica
 \newpage
 
 \section{2024.11.28}
-Any split connected reductive group over arbitrary field can be defined and split over prime subfield!
+Any split connected reductive group over arbitrary field can be uniquely defined and split over $\BZ$. (Chevalley group)
 
-The split rational form is unique.
+Classification of split reductive group is the same over arbitrary non-empty schemes, which is equivalent to the classification of root data.(cf. \cite{SGA3})
 
-Classification of split reductive group is the same over different fields.
+\newpage
 
-(They are work of Chevalley)
+
+\section{2024.12.17}
+
+Geometric Pre-quantization
+
+Let $X$ be a smooth manifold. There are natural maps
+\[
+    \mathrm{Pic}(X) \longrightarrow  \mathrm{H}^{2}_{dR}(X;\BR) \simeq  \mathrm{H}^{2}_{Cech}(X;\BR).
+\]
+Construction of the first map:
+For a (complex) line bundle $\BL \in \mathrm{Pic}^{h}(X)$, let $\langle , \rangle$ be a Hermitian metric on it and $\nabla$ be a unitary connection. (Every line bundle $\BL \in \mathrm{Pic}(X)$ has a Hermitian metric and a unitary connection on it.) 
+\begin{itemize}
+  \item choose a locally trivialization $\{U_{\alpha}\}$ of $\BL$, such that all $U_{\alpha}$ and $U_{\alpha} \cap U_{\beta}$ are contractible;
+  \item choose Unitary local frames $\{s_{\alpha}\}$ for $\BL$ on each $U_{\alpha}$, then $s \leftrightarrow (f_\alpha)$ and $\nabla \leftrightarrow (\theta_\alpha)$ (unitary implies that $\theta_\alpha$ are pure imaginary);
+  \item define $\Omega := \mathrm{d}\theta_\alpha$, and $c_1(\BL) := [\frac{1}{2\pi i}\Omega] \in \mathrm{H}^{2}_{dR}(X;\BR)$ ($\Omega = \mathrm{curv}\nabla$).
+\end{itemize}
+$c_1(\BL)$ is independent of the choice of $\langle,\rangle$ and $\nabla$ by Chern-Weil theory.
+And we can see that $\theta_\alpha - \theta_\beta = \frac{\mathrm{d}g_{\alpha,\beta}}{g_{\alpha,\beta}} = \mathrm{d}\mathrm{log}(g_{\alpha,\beta})$ on $U_\alpha \cap U_\beta$, where $g_{\alpha,\beta}$ is the translation function ($s_\beta = g_{\alpha,\beta}s_\alpha$).
+
+Construction of the second map (classical de-Rham isomorphism), choose a 2-form $\omega \in \mathrm{H}^{2}_{dR}(X;\BR)$
+\begin{itemize}
+  \item choose a cover $\{U_{\alpha}\}$ of $\BL$, such that all $U_{\alpha}$ and $U_{\alpha} \cap U_{\beta}$ are contractible;
+  \item on each $U_\alpha$, choose a 1-form $\theta_\alpha$ such that $\mathrm{d}\theta_\alpha = \omega|_{U_\alpha}$;
+  \item since $\mathrm{d}\theta_\alpha = \mathrm{d}\theta_\beta$ on $U_\alpha \cap U_\beta$, we can choose smooth function $c_{\alpha,\beta}$ such that $\mathrm{d}c_{\alpha,\beta} = \theta_\alpha - \theta_\beta$;
+  \item let $c_{\alpha,\beta,\gamma} = c_{\alpha,\beta} + c_{\beta,\gamma} + c_{\gamma,\alpha}$, which is a constant, and we get the corresponding 2-cocycle $(c_{\alpha,\beta,\gamma}) \in \mathrm{H}^{2}_{Cech}(X;\BR)$.
+\end{itemize}
+
+If $\omega$ come from the first map, we can choose $c_{\alpha,\beta} = \frac{1}{2\pi i}\mathrm{log}g_{\alpha,\beta}$, and hence $c_{\alpha,\beta,\gamma} = \frac{1}{2\pi i}(\mathrm{log}g_{\alpha,\beta} +\mathrm{log}g_{\beta,\gamma} +\mathrm{log}g_{\gamma,\alpha} ) \in \BZ$. So the morphism is in fact
+
+\[
+    \mathrm{Pic}(X) \longrightarrow  \mathrm{H}^{2}_{dR}(X;\BZ) \simeq  \mathrm{H}^{2}_{Cech}(X;\BZ).
+\]
+
+In fact the first map is also an isomorphism. (cf. \href{http://staff.ustc.edu.cn/~wangzuoq/Courses/15S-Symp/SympGeom.html}{prequantization})
+For a 2-form $\omega$, choose $\theta_\alpha$ and $c_{\alpha,\beta}$ as above, let $g_{\alpha,\beta} = \exp(2\pi i c_{\alpha,\beta})$, these are translation functions of a complex line bundle $\BL$.
+
+\begin{cor}
+  Assume that $G$ is a connected Lie group. The following are equivalent:
+  \begin{itemize}
+    \item $\Omega \subseteq \fg^*$ is integral ($[\sigma_{\Omega}] \in \mathrm{H}^2(X;\BZ)$);
+    \item there exist a $G$-equivariant complex line bundle over $\Omega$ with a $G$-invariant Hermitian connection $\nabla$ such that $$\frac{1}{2\pi i}\mathrm{curv}(\nabla) = \sigma_{\Omega}.$$
+  \end{itemize}
+\end{cor}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\linewidth]{屏幕截图 2024-12-17 180658.png}
+  \caption{Proof}
+\end{figure}
+
 
 
 
@@ -707,7 +759,8 @@ Classification of split reductive group is the same over different fields.
 
     \bibitem[KV]{KV} 
       W. Knapp and D. Vogan, \textit{Cohomological Induction and Unitary Representations}, Princeton Mathematical Series, vol. 45, Princeton University Press, Princeton, NJ, 1995.
-
+    \bibitem[SGA3]{SGA3}
+      M. Demazure, A. Grothendieck: Schémas en Groupes (SGA3) I, II, III, Lecture Notes in Mathematics 151, 152, 153, Springer, New York (1970). 
 
 
 \end{thebibliography}

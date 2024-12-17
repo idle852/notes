@@ -14,3 +14,4 @@
 {"rule":"CAPITALIZATION_NNP_DERIVED","sentence":"^\\QSome facts about continuous complex characters of some common abelian topological groups:\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[Jos]Jos A. Joseph.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QDifferential operators on homogeneous spaces I: irreducibility of the associated variety, Inv.\\E$"}
+{"rule":"A_RB_NN","sentence":"^\\Qchoose a locally trivialization \\E(?:Dummy|Ina|Jimmy-|Dummy-)[0-9]+$"}
